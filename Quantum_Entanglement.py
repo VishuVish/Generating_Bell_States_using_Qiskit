@@ -19,7 +19,7 @@ bs_gate_single = UnitaryGate(bs_2x2, label="BS_single")
 
 # Controlled-X gate (This is our basically the CNOT Gate)
 cx_matrix = np.array([[1,0,0,0],[0,0,0,1],[0,0,1,0],[0,1,0,0]])  # Controlled-x gate matrix
-cx_gate = UnitaryGate(cx_matrix, label="CZ")  # Controlled-x gate as a quantum gate
+cx_gate = UnitaryGate(cx_matrix, label="CX")  # Controlled-x gate as a quantum gate
 
 # Both the qubits are in the state |0> 
 
@@ -50,4 +50,5 @@ plot_histogram(Single_Photon_counts)
 plt.xlabel("Measurement Outcome")
 plt.ylabel("Counts")
 plt.title("Quantum Entangled Bell State Measurement")
+
 plt.show()
